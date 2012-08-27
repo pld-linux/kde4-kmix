@@ -6,36 +6,24 @@ Summary:	KDE audio mixer
 Summary(pl.UTF-8):	Mikser dźwięku dla KDE
 Name:		kde4-%{orgname}
 Version:	4.9.0
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	d380f01c837ee4609d7382a5a2b9cff2
-BuildRequires:	Qt3Support-devel >= %{qtver}
-BuildRequires:	QtSvg-devel >= %{qtver}
-BuildRequires:	QtTest-devel >= %{qtver}
+BuildRequires:	alsa-lib-devel
 BuildRequires:	automoc4 >= 0.9.88
-BuildRequires:	cdparanoia-III-devel
 BuildRequires:	cmake >= 2.8.0
-BuildRequires:	ffmpeg-devel >= 0.8
-BuildRequires:	flac-devel >= 1.1.2
-BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
+BuildRequires:	glib2-devel
 BuildRequires:	kde4-kdelibs-devel >= %{version}
-BuildRequires:	libmusicbrainz3-devel >= 1:3.0.0
-BuildRequires:	libogg-devel
-BuildRequires:	libpng-devel
+BuildRequires:	libcanberra-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtunepimp-devel
-BuildRequires:	libvorbis-devel
 BuildRequires:	phonon-devel >= 4.4.1
 BuildRequires:	pkgconfig
 BuildRequires:	pulseaudio-devel
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
-BuildRequires:	xine-lib-devel >= 1:1.0
-BuildRequires:	xorg-lib-libXpm-devel
-BuildRequires:	zlib-devel
 Requires:	kde4-kdebase >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
