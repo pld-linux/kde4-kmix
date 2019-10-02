@@ -6,7 +6,7 @@ Summary:	KDE audio mixer
 Summary(pl.UTF-8):	Mikser dźwięku dla KDE
 Name:		kde4-%{orgname}
 Version:	4.14.3
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
